@@ -205,3 +205,8 @@
     font-size: 2rem;
   }
 }
+
+#map {
+  height: 500px !important;
+  width: 100%;
+}

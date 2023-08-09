@@ -151,3 +151,21 @@ moreBtn.addEventListener('click', () => {
     moreBtn.innerHTML = 'LESS&nbsp;&nbsp;<img id="more-speakers-img" src="./images/nav/red_arrow_up.svg" alt="up icon">';
   }
 });
+
+/**
+ * @license
+ * Copyright 2019 Google LLC. All Rights Reserved.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+let map;
+
+async function initMap() {
+  const { Map } = await google.maps.importLibrary("maps");
+
+  map = new Map(document.getElementById("map"), {
+    center: { lat: 20.965834, lng: 107.035013 }, // Tọa độ Bãi Cháy
+    zoom: 14, // Độ phóng to của bản đồ
+  });
+}
+
+initMap();
